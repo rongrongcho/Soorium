@@ -1,0 +1,144 @@
+#Qcontainer {
+  position: relative;
+  width: 100%;
+}
+
+.titles {
+  position: absolute;
+  width: 130px;
+  text-align: center;
+  margin-left: -5px;
+  top: 200px;
+  left: 80%;
+  display: inline-block;
+  font-weight: normal;
+}
+
+#qnaBox {
+  position: relative;
+  top: 450px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 800px;
+  padding: 3%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  box-sizing: border-box;
+}
+
+.qna_category {
+  position: absolute;
+  width: 94%;
+  overflow: hidden;
+  top: -50px;
+  box-sizing: border-box;
+}
+
+.qna_category li {
+  position: relative;
+
+  float: left;
+  width: 15%;
+  height: 40px;
+  margin-right: 1%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.qna_category li:last-child {
+  margin-right: 0;
+}
+
+#cSubject {
+  width: 20%;
+}
+
+.qnaContentArea {
+  position: relative;
+  width: 100%;
+}
+.qContents {
+  position: relative;
+}
+
+.qList {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.qList > p {
+  position: relative;
+  top: 0;
+  float: left;
+  width: 15%;
+  margin-right: 1%;
+  height: 100%;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+.qList > p:last-child {
+  margin-right: 0;
+}
+
+.qList > p:nth-child(4) {
+  width: 20%;
+}
+
+.qList img {
+  width: 99%;
+  height: 99%;
+}
+
+.qList a {
+  position: absolute;
+  display: block;
+  /* top: 45%; */
+  width: 100%;
+  text-align: center;
+}
+
+.qNumver,
+.qCategory,
+.qSubject,
+.qName,
+.qDate {
+  top: 45%;
+}
+
+#btn_qnaMover {
+  position: relative;
+  top: 150px;
+  width: 100%;
+}
+
+.btn_mover {
+  position: relative;
+  width: 340px;
+}
+
+.btn_mover li {
+  display: inline-block;
+  margin: 5px;
+  cursor: default;
+  text-align: center;
+}
+.btn_mover a {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  background-color: #161616;
+}

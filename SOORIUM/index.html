@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOORIUM</title>
+  <link rel="icon" href="/images/fabicon.png">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/jquery-3.6.3.min.js"> </script>
+  <script src="js/index.js"> </script>
+
+
+
+</head>
+
+
+<body>
+  <div id="container">
+    <!-- ===============================header영역 시작 =================================== -->
+    <header id="indexheader">
+      <h1 id="topLogo"><a href="index.html"><img src="images/logo.png" alt="수리움 브랜드 로고"></a></h1>
+      <nav id="indexNav">
+        <ul class="mainMenu">
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">ARCHIVE</a></li>
+          <li id="store"><a href="store.html">STORE</a>
+            <ul class="subMenu">
+              <li><a href="store.html">View All</a></li>
+              <li><a href="store.html">New Arrival</a></li>
+              <li><a href="store.html">Collection Line</a></li>
+              <li><a href="store.html">Soorium My</a></li>
+              <li><a href="store.html">Most Loved</a></li>
+            </ul>
+          </li>
+          <li><a href="join.html">LOGIN</a></li>
+          <li><a href="qna.html">Q&A</a></li>
+          <li><a href="#">SHOPPING BAG</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ===============================header영역 끝 =================================== -->
+    <!-- ===============================VisalArea 시작 =================================== -->
+    <section id="visualArea" class="box">
+      <h2 class="hidden">visualArea</h2>
+      <div class="visualImg">
+        <a href="#" id="vImg1">
+          <!-- 남는 이미지는 overflow:hidden 처리 -->
+          <img src="images/vusual1.png" alt="비쥬얼 상품 이미지">
+        </a>
+        <a href="#" id="vImg2">
+          <img src="images/visual2.png" alt="비쥬얼 상품 이미지">
+        </a>
+        <a href="#" id="vImg3">
+          <img src="images/visual3.png" alt="비쥬얼 상품 이미지">
+        </a>
+        <a href="" id="vImg4">
+          <img src="images/visual4.png" alt="비쥬얼 상품 이미지">
+        </a>
+      </div>
+      <button id="btn_visu" type="button" onclick="location.href='join.html'">REGISTER</button>
+      <p class="textLine" id="tLine1">
+        <marquee scrolldelay=400 loop=infinite scrollamount=50>
+          A silver studio that unravels the ever-changing metal silver with a soft and flexible aesthetic.
+        </marquee>
+      </p>
+      <p class="textLine" id="tLine2">
+        <marquee scrolldelay=400 loop=infinite scrollamount=50>
+          A silver studio that unravels the ever-changing metal silver with a soft and flexible aesthetic.
+        </marquee>
+      </p>
+    </section>
+    <!-- ===============================VisalArea 끝 =================================== -->
+    <!-- ===============================storeArea 시작 =================================== -->
+    <section id="storeArea" class="box">
+      <h2 id="storeTitle" class="titles">
+        <a href="#">STORE</a>
+      </h2>
+      <div id="sSlideArea">
+        <!-- 총 슬라이드 영역 -->
+
+        <div id="slideShow">
+          <!-- 슬라이드 이미지가 보여지는 영역 -->
+          <div id="binarea"></div>
+          <!-- 디자인 요소  -->
+        </div>
+        <!-- 슬라이드 되는 콘텐츠들 -->
+        <ul class="sSlide_con">
+          <li class="sImgItem"><a href="#"><img src="images/sSlide01.jpg" alt="상품 이미지"></a></li>
+          <li class="sImgItem"><a href="#"><img src="images/sSlide02.jpg" alt="상품 이미지"></a></li>
+          <li class="sImgItem"><a href="#"><img src="images/sSlide03.jpg" alt="상품 이미지"></a></li>
+          <li class="sImgItem"><a href="#"><img src="images/sSlide04.jpg" alt="상품 이미지"></a></li>
+          <li class="sImgItem"><a href="#"><img src="images/sSlide05.jpg" alt="상품 이미지"></a></li>
+          <li class="sImgItem"><a href="#"><img src="images/sSlide06.jpg" alt="상품 이미지"></a></li>
+          <li class="sImgItem"><a href="#"><img src="images/sSlide07.jpg" alt="상품 이미지"></a></li>
+          <li class="sImgItem"><a href="#"><img src="images/mSlide06.jpg" alt="상품 이미지"></a></li>
+          <li class="sImgItem"><a href="#"><img src="images/mSlide07.jpg" alt="상품 이미지"></a></li>
+        </ul>
+
+        <div class="rightLeft">
+          <span class="right"></span>
+          <span class="left"></span>,
+        </div>
+
+        <button id="btn_see" type="button" onclick="location.href='store.html'" >See More</button>
+      </div>
+    </section>
+    <!-- ===============================storeArea 끝 =================================== -->
+    <!-- ===============================moreArea 시작 =================================== -->
+    <section id="moreArea" class="box">
+      <h2 id="moreTitle" class="tiltes">
+        <a href="#">MORE&MORE</a>
+      </h2>
+      <!--원형 텍스트 서클을 만들어야 하는데 HTML을 어떻게 짜야할지 모르겠다-->
+      <div class="carousel">
+
+      </div>
+    </section>
+    <!-- ===============================moreArea 끝 =================================== -->
+
+    <!-- ===============================footer 시작 =================================== -->
+    <footer id="footer" class="box">
+      <ul class="fInfo">
+        <li>
+          <p>
+            Q&A 게시판을 이용해주세요<br>
+            OPENING HOURS. 11:00-18:00<br>
+            SAT, SUN,PUBLIC HOLIDAY OFF<br>
+            국민은행 580301-04-306423<br>
+            예금주 : 강수빈<br>
+
+          </p>
+        </li>
+        <li>
+          <p>
+            COMPANY SOORIUM<br>
+            OWNER & ADMIN KHANG SU BINBUSINESS<br>
+            NO. 620-26-00745<br>
+            ONLINE-ORDER NO. 2019-광주서구-0376<br>
+          <address>
+            ADDRESS 3F, 10, Nonhyeon-ro 151-gil, Gangnam-gu, Seoul, Republic of Korea
+          </address><br>
+          E.MAIL SOORIUM.OFFICIAL@GMAIL.COM
+          </p>
+        </li>
+      </ul>
+      <span id="copyright">COPYRIGHT (C) 2019 SOORIUM ALL RIGHTS RESERVED</span>
+    </footer>
+    <!-- ===============================footer 끝 =================================== -->
+  </div>
+</body>
+
+</html>

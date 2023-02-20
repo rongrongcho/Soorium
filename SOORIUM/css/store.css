@@ -1,0 +1,89 @@
+.titles {
+  position: absolute;
+  display: inline-block;
+  width: 130px;
+  left: 80%;
+  margin-left: -5px;
+  text-align: center;
+  top: 200px;
+  font-weight: normal;
+  font-family: "Jacques Francois";
+}
+
+#contentS {
+  position: relative;
+  top: 340px;
+  width: 100%;
+  height: 1500px;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+#quickMenu {
+  position: relative;
+  width: 25%;
+  height: auto;
+  padding: 5%;
+  box-sizing: border-box;
+  font-family: "Jacques Francois";
+}
+
+.menutitle {
+  position: relative;
+  width: 100%;
+}
+
+.menutitle li {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-left: 20%;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.menutitle li a {
+  position: relative;
+  display: block;
+  text-align: left;
+}
+
+.menutitle li a:hover {
+  transform: scale(0.9);
+  background-color: #161616;
+  color: #fff;
+}
+
+.storeProducts {
+  position: absolute;
+  width: 75%;
+  padding-right: 5%;
+  top: 0;
+  height: auto;
+  right: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.storeProducts > li {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 350px;
+  margin-right: 3%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.storeProducts img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.spTitle,
+.spPrice {
+  position: relative;
+  display: block;
+  margin: 5px;
+  font-size: 14px;
+}

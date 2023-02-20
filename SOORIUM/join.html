@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/join.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+  <div id="join_container">
+    <!-- ===============================header영역 시작 =================================== -->
+    <header id="indexheader">
+      <h1 id="topLogo"><a href="index.html"><img src="images/logo.png" alt="수리움 브랜드 로고"></a></h1>
+      <nav id="indexNav">
+        <ul class="mainMenu">
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">ARCHIVE</a></li>
+          <li id="store"><a href="store.html">STORE</a>
+            <ul class="subMenu">
+              <li><a href="store.html">View All</a></li>
+              <li><a href="store.html">New Arrival</a></li>
+              <li><a href="store.html">Collection Line</a></li>
+              <li><a href="store.html">Soorium My</a></li>
+              <li><a href="store.html">Most Loved</a></li>
+            </ul>
+          </li>
+          <li><a href="join.html">LOGIN</a></li>
+          <li><a href="qna.html">Q&A</a></li>
+          <li><a href="#">SHOPPING BAG</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ===============================header영역 끝 =================================== -->
+
+
+    <div id="contentArea">
+      <!-- 회원가입 컬럼 시작 -->
+      <h2 class="titles">REGISTER</h2>
+
+
+      <section id="memberArea" class="memberJoin">
+        <span class="formSign"><strong class="require">*</strong> 는 반드시 입력하여야 하는 항목입니다</span>
+        <form action="join.jsp" method="post" id="joinForm" name="joinForm">
+          <fieldset>
+            <legend>회원가입 정보 입력 폼</legend>
+            <ul class="infoco">
+              <li class="leftinfo">
+                <label for="name">성명<strong class="require">*</strong></label>
+              </li>
+              <li>
+                <input type="text" id="name" name="name" required placeholder="홍길동">
+              </li>
+            </ul>
+
+            <ul class="infoco">
+              <li class="leftinfo">
+                <label for="id">아이디<strong class="require">*</strong></label>
+              </li>
+              <li>
+                <input type="text" id="id" name="id" required placeholder="Guest">
+              </li>
+              <li>
+                <a href="#" class="idCheck">ID중복확인</a>
+
+              </li>
+            </ul>
+
+            <ul class="infoco">
+              <li class="leftinfo">
+                <label for="password">비밀번호<strong class="require">*</strong></label>
+              </li>
+              <li>
+                <input type="password" id="password" name="password" required placeholder="영문/숫자 4~8자 이내">
+              </li>
+            </ul>
+            <ul class="infoco">
+              <li class="leftinfo">
+                <label for="confirmPassword">비밀번호 확인<strong class="require">*</strong></label>
+              </li>
+              <li>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+              </li>
+            </ul>
+            <ul class="infoco">
+              <li class="leftinfo">
+                <label for="address" class="labelAddress">주소</label>
+              </li>
+              <li>
+                <a href="#" class="findZipcode">우편번호 찾기</a>
+                <input type="tel" id="zipcode" name="zipcode" maxlength="5" size="6" title="우편번호">
+                <input type="text" id="address" name="address" maxlength="100" size="60">
+              </li>
+            </ul>
+            <ul class="infoco">
+              <li class="leftinfo">
+                <label for="tel">연락처</label>
+              </li>
+              <li>
+                <input type="tel" id="tel" name="tel" maxlength="11" size="20" title="하이픈(-)은 입력할 수 없습니다."
+                  placeholder="입력 예)01033337777">
+              </li>
+            </ul>
+
+            <ul class="infoco">
+              <li class="leftinfo">
+                <label for="email">이메일<strong class="require">*</strong></label>
+              </li>
+              <li>
+                <input type="email" id="email" name="email" size="30" required placeholder="입력 예)ezen@gmail.com">
+              </li>
+            </ul>
+
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="priInfo" class="memberJoin">
+        <div div class="agreeInfo agreeInfo0">
+          <p id="allagree">이용약관 및 개인정보수집 및 이용,쇼핑정보 수신(선택)에 모두 동의합니다. </p>
+          <p class="allSpecial">
+            <input type="radio" id="personalInfoOk" name="personalInfo" value="Yes" checked>
+            <label for="personalInfoOk">전체 동의</label>
+            <input type="radio" id="personalInfoNo" name="personalInfo" value="No">
+            <label for="personalInfoNo">비동의</label>
+          </p>
+        </div>
+
+        <div class="agreeInfo agreeInfo1">
+          <label class="question" for="personalInfo">개인정보 수집 및 이용 동의</label>
+          <p class="personalText">□ 개인정보의 수집 및 이용에 관한 사항<br>
+            - 수집하는 개인정보 항목 (이력서 양식 내용 일체) : 성명, 주민등록번호, 전화번호,
+            주소, 이메일, 가족관계, 학력사항, 경력사항, 자격사항 등과 그 外 이력서 기재 내용
+            일체<br>
+            - 개인정보의 이용 목적 : 수집된 개인정보를 사업장 신규 채용 서류 심사 및 인사서
+            류로 활용하며, 목적 외의 용도로는 사용하지 않습니다. <br>
+            □ 개인정보의 보관 및 이용 기간<br>
+            - 귀하의 개인정보를 다음과 같이 보관하며, 수집, 이용 및 제공목적이 달성된 경우
+            [개인정보 보호법] 제21조에 따라 처리합니다. </p>
+          <p class="radioSpecial">
+            <input type="radio" id="personalInfoOk" name="personalInfo" value="Yes" checked>
+            <label for="personalInfoOk">동의</label>
+            <input type="radio" id="personalInfoNo" name="personalInfo" value="No">
+            <label for="personalInfoNo">비동의</label>
+          </p>
+        </div>
+        <div class="agreeInfo agreeInfo2">
+          <label class="question" for="personalInfo">개인정보 수집 및 이용 동의</label>
+          <p class="personalText">□ 개인정보의 수집 및 이용에 관한 사항<br>
+            - 수집하는 개인정보 항목 (이력서 양식 내용 일체) : 성명, 주민등록번호, 전화번호,
+            주소, 이메일, 가족관계, 학력사항, 경력사항, 자격사항 등과 그 外 이력서 기재 내용
+            일체<br>
+            - 개인정보의 이용 목적 : 수집된 개인정보를 사업장 신규 채용 서류 심사 및 인사서
+            류로 활용하며, 목적 외의 용도로는 사용하지 않습니다. <br>
+            □ 개인정보의 보관 및 이용 기간<br>
+            - 귀하의 개인정보를 다음과 같이 보관하며, 수집, 이용 및 제공목적이 달성된 경우
+            [개인정보 보호법] 제21조에 따라 처리합니다. </p>
+          <p class="radioSpecial">
+            <input type="radio" id="personalInfoOk" name="personalInfo" value="Yes" checked>
+            <label for="personalInfoOk">동의</label>
+            <input type="radio" id="personalInfoNo" name="personalInfo" value="No">
+            <label for="personalInfoNo">비동의</label>
+          </p>
+        </div>
+        <div class="agreeInfo agreeInfo3">
+          <label class="question" for="personalInfo">개인정보 수집 및 이용 동의</label>
+          <p class="personalText">□ 개인정보의 수집 및 이용에 관한 사항<br>
+            - 수집하는 개인정보 항목 (이력서 양식 내용 일체) : 성명, 주민등록번호, 전화번호,
+            주소, 이메일, 가족관계, 학력사항, 경력사항, 자격사항 등과 그 外 이력서 기재 내용
+            일체<br>
+            - 개인정보의 이용 목적 : 수집된 개인정보를 사업장 신규 채용 서류 심사 및 인사서
+            류로 활용하며, 목적 외의 용도로는 사용하지 않습니다. <br>
+            □ 개인정보의 보관 및 이용 기간<br>
+            - 귀하의 개인정보를 다음과 같이 보관하며, 수집, 이용 및 제공목적이 달성된 경우
+            [개인정보 보호법] 제21조에 따라 처리합니다. </p>
+          <p class="radioSpecial">
+            <input type="radio" id="personalInfoOk" name="personalInfo" value="Yes" checked>
+            <label for="personalInfoOk">동의</label>
+            <input type="radio" id="personalInfoNo" name="personalInfo" value="No">
+            <label for="personalInfoNo">비동의</label>
+          </p>
+        </div>
+        <div id="btn_join">회원 가입</div>
+
+
+
+
+
+
+      </section>
+
+
+
+
+
+
+      <!-- ===============================footer 시작 =================================== -->
+      <footer id="footer">
+
+        <ul class="fInfo">
+          <li>
+            <p>
+              Q&A 게시판을 이용해주세요<br>
+              OPENING HOURS. 11:00-18:00<br>
+              SAT, SUN,PUBLIC HOLIDAY OFF<br>
+              국민은행 580301-04-306423<br>
+              예금주 : 강수빈<br>
+
+            </p>
+          </li>
+          <li>
+            <p>
+              COMPANY SOORIUM<br>
+              OWNER & ADMIN KHANG SU BINBUSINESS<br>
+              NO. 620-26-00745<br>
+              ONLINE-ORDER NO. 2019-광주서구-0376<br>
+            <address>
+              ADDRESS 3F, 10, Nonhyeon-ro 151-gil, Gangnam-gu, Seoul, Republic of Korea
+            </address><br>
+            E.MAIL SOORIUM.OFFICIAL@GMAIL.COM
+            </p>
+          </li>
+        </ul>
+        <span id="copyright">COPYRIGHT (C) 2019 SOORIUM ALL RIGHTS RESERVED</span>
+      </footer>
+      <!-- ===============================footer 끝 =================================== -->
+
+
+    </div>
+
+</body>
+
+</html>

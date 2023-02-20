@@ -1,0 +1,529 @@
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+#container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  /* background-color: pink; */
+  box-sizing: border-box;
+}
+
+#visualArea {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  /* background-color: bisque; */
+  overflow: hidden;
+}
+
+#vImg1 {
+  position: absolute;
+  left: 75%;
+  transition: transform 0.5s ease-out;
+}
+
+#vImg1:hover {
+  opacity: 0.7;
+}
+
+#vImg2 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  display: block;
+  width: 220px;
+  height: 330px;
+  box-sizing: border-box;
+}
+#vImg2:hover {
+  opacity: 0.7;
+}
+
+#vImg2 > img {
+  width: 100%;
+  height: 100%;
+}
+
+#vImg3 {
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+
+  bottom: -1%;
+  display: block;
+  width: 450px;
+  height: 250px;
+  box-sizing: border-box;
+}
+#vImg3:hover {
+  opacity: 0.7;
+}
+
+#vImg3 > img {
+  width: 100%;
+  height: 100%;
+}
+
+#vImg4 {
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 130px;
+  box-sizing: border-box;
+  top: 23%;
+  left: 20%;
+}
+#vImg4:hover {
+  opacity: 0.7;
+}
+
+#vImg4 > img {
+  width: 100%;
+  height: 100%;
+}
+
+#btn_visu {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  height: 60px;
+  color: #161616;
+  background-color: #fcf8f8;
+  font-family: "Jacques Francois";
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(146, 140, 140, 0.25);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  transform: scale(1);
+  transition: transform 0.5s ease-out;
+}
+
+#btn_visu:hover {
+  transform: scale(0.8);
+  background-color: #161616;
+  color: #fcf8f8;
+}
+
+#tLine1 {
+  /* A silver studio that unravels the ever-changing metal silver with a soft and flexible aesthetic. */
+  position: absolute;
+  width: 1600px;
+  height: 47px;
+  left: 35%;
+  top: 400px;
+  /* background-color: #ccc; */
+  font-family: "Jacques Francois";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #161616;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  transform: rotate(90deg);
+  z-index: 10;
+}
+
+#tLine2 {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex velit. */
+  position: absolute;
+  width: 1600px;
+  height: 47px;
+  left: -500px;
+  top: 900px;
+  /* background-color: #ccc; */
+  font-family: "Jacques Francois";
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 36px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #161616;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  transform: rotate(-140.16deg);
+  z-index: 10;
+}
+/* ========================================================================= */
+#storeArea {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  /* background-color: pink; */
+  overflow: hidden;
+}
+
+#storeTitle {
+  position: absolute;
+  width: 154px;
+  height: 53px;
+  left: 5%;
+  top: 5%;
+  font-family: "Jacques Francois";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 53px;
+  text-align: center;
+  color: #161616;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#sSlideArea {
+  position: relative;
+  width: 100%;
+  top: 200px;
+  height: 800px;
+  /* background-color: pink;
+  border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+#slideShow {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  padding: 0 30px;
+  border: 1px solid #ebebeb;
+  left: 810px;
+  background-image: url(/images/showbox.png);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------------------- */
+.sSlide_con {
+  position: relative;
+  /* left: -3040px; */
+  top: -470px;
+  width: 13190px;
+  left: -3040px;
+  /* border: 1px solid red; */
+  height: 400px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sSlide_con > li {
+  position: relative;
+  margin: 0 50px 0 0;
+  /* left: -3040px; */
+  float: left;
+  width: 300px;
+  height: 400px;
+  /* display: inline-block; */
+  display: block;
+  box-sizing: border-box;
+  opacity: 1;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------------------------------------------------------------------------------- */
+.sSlide_con img {
+  width: 100%;
+  height: 100%;
+}
+#btn_see {
+  position: absolute;
+  width: 180px;
+  height: 50px;
+  bottom: 70px;
+  top: -20px;
+  left: 50%;
+  margin-left: -90px;
+  /* margin-top: -15px; */
+  background: #161616;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  color: #fcf8f8;
+  cursor: pointer;
+  font-family: "Jacques Francois";
+  transform: scale(1);
+  transition: transform 0.5s ease-out;
+}
+
+#btn_see:hover {
+  transform: scale(0.8);
+  background-color: #fcf8f8;
+  color: #161616;
+}
+
+.right {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 5%;
+  bottom: 100px;
+  display: none;
+
+  background-color: royalblue;
+}
+
+.left {
+  position: absolute;
+  left: 5%;
+  width: 15px;
+  height: 15px;
+  bottom: 100px;
+  display: none;
+  /* background-color: red; */
+}
+
+/* ================================================ */
+
+#moreArea {
+  position: relative;
+  width: 100%;
+  padding: 5%;
+  height: 1000px;
+  /* background-color: tomato; */
+}
+
+#moreTitle {
+  position: absolute;
+  width: 154px;
+  height: 53px;
+  left: 5%;
+  top: 5%;
+  font-family: "Jacques Francois";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 53px;
+  text-align: center;
+  color: #161616;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* m슬라이드 영역 ================================== */
+/* page styles */
+.ax-hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* carousel styles */
+.carousel {
+  position: relative;
+  top: 185px;
+  width: 100%;
+  left: -96px;
+  /* background: url(/images/textccc.svg) no-repeat; */
+  /* background-color: black; */
+  --carousel-height: 400px;
+  --carousel-width: 1000px;
+  --carousel-item-height: 250px;
+  --carousel-item-width: 200px;
+  /* --carousel-item-height: 150px;
+  --carousel-item-width: 150px; */
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: var(--carousel-height);
+  margin: 0 auto;
+  max-width: var(--carousel-width);
+}
+
+.carousel-item {
+  height: var(--carousel-item-height);
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  width: var(--carousel-item-width);
+  z-index: 0;
+  cursor: pointer;
+  /* border-radius: 10px; */
+}
+
+.carousel-item-1 {
+  left: 15%;
+  opacity: 0.4;
+}
+
+.carousel-item-2,
+.carousel-item-4 {
+  height: calc(var(--carousel-item-height) * 1.5);
+  opacity: 1;
+  width: calc(var(--carousel-item-width) * 1.5);
+  z-index: 1;
+}
+
+.carousel-item-2 {
+  left: 30%;
+}
+
+.carousel-item-3 {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* 0 0 30px rgba(255, 255, 255, 0.6),
+    0 0 3px rgba(255, 255, 255, 0.45), 0 0 13px rgba(255, 255, 255, 0.25),
+    0 0 10px rgba(255, 255, 255, 0.1); */
+  height: calc(var(--carousel-item-height) * 2);
+  opacity: 1;
+  left: 50%;
+  width: calc(var(--carousel-item-width) * 2);
+  z-index: 2;
+}
+
+.carousel-item-4 {
+  left: 70%;
+}
+
+.carousel-item-5 {
+  left: 85%;
+  opacity: 0.4;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+/* carousel button styles */
+.carousel-control {
+  background-color: transparent;
+  border: 0.1px solid #ffffff;
+  border-radius: 4px;
+  /* color: #fcf8f8; */
+  color: #161616;
+
+  cursor: pointer;
+  height: 20px;
+  margin: 100px 20px;
+  position: relative;
+  transform: scale(1.4);
+  transition: transform 0.5s ease-out;
+  width: 20px;
+}
+
+.carousel-control:hover {
+  transform: scale(1.2);
+}
+
+/* previous button */
+.carousel-control-previous::after,
+.carousel-control-previous::before {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 8px;
+  position: absolute;
+  top: 5px;
+}
+.carousel-control-previous::before {
+  background: currentColor;
+  border-radius: 2px;
+  right: 11px;
+  width: 2px;
+}
+.carousel-control-previous::after {
+  border-bottom: 4px solid transparent;
+  border-right: 5px solid;
+  border-top: 4px solid transparent;
+  right: 5px;
+  width: 0;
+}
+
+/* next button */
+.carousel-control-next::after,
+.carousel-control-next::before {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 8px;
+  position: absolute;
+  top: 5px;
+}
+.carousel-control-next::before {
+  background: currentColor;
+  border-radius: 2px;
+  left: 11px;
+  width: 2px;
+}
+.carousel-control-next::after {
+  border-bottom: 4px solid transparent;
+  border-left: 5px solid;
+  border-top: 4px solid transparent;
+  left: 5px;
+  width: 0;
+}
+
+/* play button */
+.carousel-control-play::before {
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid;
+  border-top: 5px solid transparent;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 0;
+}
+
+/* pause button */
+.carousel-control-play.playing::before {
+  border-bottom: 0;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-top: 0;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 6px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 6px;
+}
+
+/* add button */
+.carousel-control-add::after,
+.carousel-control-add::before {
+  background: currentColor;
+  border-radius: 5px;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  width: 10px;
+}
+.carousel-control-add::after {
+  height: 10px;
+  left: 8px;
+  top: 4px;
+  width: 2px;
+}
+/* m슬라이드 영역 끝================================== */
